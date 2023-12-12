@@ -1,0 +1,38 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: medium;
+}
+
+header {
+    background-color: rgb(202, 222, 237);
+    color: white;
+    text-align:center;
+    padding: 1em;
+    font-size: medium;
+    font-style: initial;
+}
+
+section {
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    text-align:center;
+    padding: 0.001em;
+    background-color: rgb(207, 223, 227);
+    color: white;
+    font-size: xxx-large;
+}
+#profile img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
