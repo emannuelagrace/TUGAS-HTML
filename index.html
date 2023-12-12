@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> @gracemannuela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+           Grace's Personal Page
+        </h1>
+        <h2>
+            <marquee direction="right">HELLO! ♡</marquee>
+        </h2>
+    </header>
+    
+    <section id="Picture">
+        <img src="Grace.png" alt="Grace" width ="200">
+    </section>
+
+    <section id="About Me">
+        <P><b>Nama: Emannuela Grace Ariana Widodo</b></P>
+        <p>Instagram: @gracemannuela</p>
+        <p>Alamat: Gamping, Sleman, Yogyakarta</p>
+        <p>Duta Wacana Christian University</p>
+    </section>
+
+    <section id="Skill">
+        <p>
+        Programming Language skill:
+            <ol>
+                <li>C</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS, JavaScript</li>
+            </ol>
+        </p>
+    </section>
+    
+    <button id="tombolGantiWarna">Change Color</button>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ['#ff0000', '#0000ff', '##008000', '#ffffff']
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById('tombolGantiWarna')
+        tombolGantiWarna.addEventListener('click',gantiWarnaRandom)
+    </script>
+</body>
+</html>
